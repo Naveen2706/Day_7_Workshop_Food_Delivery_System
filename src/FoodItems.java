@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 interface IVeg {
@@ -8,11 +6,10 @@ interface IVeg {
 interface INonVeg {
 }
 
-    public abstract class FoodItems {
+public abstract class FoodItems {
     enum Taste {SPICY, SWEET, SALTY, SPICY_SALTY};
 
     enum Category {MAINCOURSE, STARTERS, JUICES, DESSERT};
-    // enum Type{VEG, NON_VEG};
 
     @Override
     public String toString() {
@@ -42,7 +39,6 @@ interface INonVeg {
 
 
     String name;
-    //  Type type;
     Category category;
     Taste taste;
     byte price;

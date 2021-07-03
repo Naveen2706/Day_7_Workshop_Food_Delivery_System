@@ -9,25 +9,25 @@ public class Main {
 
         Salad salad = new Salad();
         salad.price = 40;
-        // salad.mainIngredient();
+        salad.mainIngredient();
         Salad salad1 = new Salad();
         salad1.price = 50;
 
         HakkaNoodles hakkaNoodles = new HakkaNoodles();
         hakkaNoodles.price = 60;
-        //hakkaNoodles.mainIngredient();
+        hakkaNoodles.mainIngredient();
 
         Momos momos = new Momos();
         momos.price = 80;
-        //momos.mainIngredient();
+        momos.mainIngredient();
 
         Tandoor tandoor = new Tandoor();
         tandoor.price = 110;
-        // tandoor.mainIngredient();
+        tandoor.mainIngredient();
 
         VegThali vegThali = new VegThali();
         vegThali.price = 120;
-        // vegThali.mainIngredient();
+        vegThali.mainIngredient();
 
         main.foodManager.add(tandoor);
         main.foodManager.add(vegThali);
@@ -37,16 +37,8 @@ public class Main {
         main.foodManager.add(hakkaNoodles);
 
         main.foodManager.print();
-        /* System.out.println("Before Removing :: " + foodManager.getFoodListCount());
-        foodManager.delete(salad1);
-        System.out.println("After Removing :: " + foodManager.getFoodListCount());
-        main.foodManager.print();
-        main.foodManager.printAllVegItems();
-        main.foodManager.printAllNonVegItems();
-        */
 
         main.showMenu();
-        //main.foodManager.print();
     }
 
     void showMenu() {
@@ -54,7 +46,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("1. Update Food item");
         System.out.println("Enter Choice");
-        //scanner.close();
+
         int choice = scanner.nextInt();
         switch (choice) {
             case 1:
