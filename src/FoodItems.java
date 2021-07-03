@@ -46,7 +46,7 @@ interface INonVeg {
     Category category;
     Taste taste;
     byte price;
-    short preparationTime;
+    byte preparationTime;
 
     public abstract void mainIngredient();
 }
